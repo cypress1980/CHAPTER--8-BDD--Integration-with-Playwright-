@@ -13,4 +13,6 @@ class LoginPage:
     def login(self, email, password):
         self.email_input.fill(email)
         self.password_input.fill(password)
+        
+    def click_login(self):
         self.login_btn.click()

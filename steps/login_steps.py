@@ -15,10 +15,8 @@ def open_login_page(login_page):
 
 @when(parsers.parse('the user enters email "{email}" and password "{password}"'))
 def enter_credentials(login_page, email, password):
-    # email and password are provided by the Scenario Outline examples in the .feature file
     login_page.login(email, password)
 
 @when("clicks the login button")
 def click_login(login_page):
-    # Already clicked in login() method; can pass for this step
-    pass
+    login_page.click_login()
