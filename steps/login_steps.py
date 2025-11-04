@@ -3,7 +3,8 @@ import pytest
 from pytest_bdd import scenarios, given, when, then, parsers
 from pages.login_page import LoginPage
 
-scenarios("../features/login.feature")
+# scenarios("../features/login.feature")
+scenarios("../features/login_withTagBackground.feature")
 
 @pytest.fixture
 def login_page(page):

@@ -3,7 +3,8 @@ from pytest_bdd import scenarios, when, then,given, parsers
 from pages.search_page import SearchPage
 from pages.login_page import LoginPage
 
-scenarios("../features/search.feature")
+#scenarios("../features/search.feature")
+scenarios("../features/search_withTagBackground.feature")
 
 @pytest.fixture
 def search_page(page):
